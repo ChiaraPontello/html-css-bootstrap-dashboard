@@ -59,3 +59,7 @@ table img {
 .icon-canvas {
     font-size: 40px;
 }
+
+#offcanvasRight {
+    width: 50%;
+}
