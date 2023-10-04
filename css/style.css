@@ -1,3 +1,8 @@
+:root {
+    --my-badge: rgb(22, 91, 186);
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
 }    
@@ -10,11 +15,10 @@ body {
 
 header {
     width: 100%;
-    height: 70px;
+    height: 60px;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
     z-index: 1000;
 }
 
@@ -23,9 +27,14 @@ header img {
     display: block;
 }
 
+.badge {
+    background-color: var(--my-badge);
+}
+
 main {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    margin-top: 60px ;
     display: flex;
     flex-flow: row nowrap;
 }
@@ -33,6 +42,7 @@ main {
 #sidebar {
     background-color: #0F263D;
     background-image: url(../img/sidebar-bg.png);
+    flex-shrink: 1;
 }
 
 #main-content {
